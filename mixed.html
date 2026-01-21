@@ -1,32 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mixed selector</title>
     <style>
-        p{
+        p {
             color: blue;
-            
+
         }
-        .hould,.yellow{
+
+        .hould,
+        .yellow {
             background-color: brown;
         }
-        #sixth{
+
+        #sixth {
             text-align: center;
             font-size: 20px;
         }
-        .bold{
+
+        .bold {
             font-size: 30px;
         }
-        .hould{
+
+        .hould {
             color: blue;
         }
-        .lorem{
+
+        .lorem {
             background-color: chartreuse;
         }
+
+        .first {
+            border: 2px solid blueviolet;
+
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .first p {
+            color: red;
+            font-size: 24px;
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .first h2 {
+            text-transform: uppercase;
+            color: goldenrod;
+            text-align: center;
+        }
+
+        .second {
+            border: 2px solid salmon;
+            padding: 10px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .second p {
+            color: red;
+            font-size: 24px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .second h2 {
+            color: goldenrod;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .one {
+            border: 2px solid red;
+            margin: 20px;
+            border-radius: 15px;
+            display: flex;
+            gap: 10px;
+            padding: 15px;
+
+        }
+        .third{
+            border: 2px solid chocolate;
+            margin: 5px;
+            padding: 15px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .third h2{
+            color: brown;
+            text-transform: uppercase;
+            text-align: center;
+
+
+        }
+        .third p{
+            color: red;
+            font-size: 24px;
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+        .four{
+          border: 2px solid red;
+          margin: 5px;
+          border-radius: 15px;
+          padding: 5px;
+          font-size: 24px; 
+          display: flex;
+          align-items: center;
+        }
+        .four p{
+            color: brown;
+            width:50% ;
+            margin: 0 auto;
+            text-align: center;
+           padding: 10px 0;
+
+        }
+        .five{
+            border: 2px solid red;
+            border-radius: 15px;
+            margin: 5px;
+            padding: 5px;
+            font-size: 24px;
+        }
+        .five h2{
+        color: brown;
+        text-align: center;
+        text-transform: uppercase;
+        }
+        .five p{
+            color: red;
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px 0;
+            
+        }
+        .tow{
+            display: flex;
+            border: 2px solid red;
+            border-radius: 15px;
+        }
+        
+        
     </style>
 </head>
+
 <body>
     <h2>Exlore Mixed Selectors</h2>
     <p class="hould">My first line css</p>
@@ -37,11 +168,41 @@
     <p id="sixth">My sixth line css</p>
     <p>My seventh line css</p>
     <ol>
-    <li class="hould">id selector</li>
-    <li>class selector</li>
-    <li class="bold">universal</li>
-    <li>element selector</li>
+        <li class="hould">id selector</li>
+        <li>class selector</li>
+        <li class="bold">universal</li>
+        <li>element selector</li>
     </ol>
-    <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, debitis. Tenetur est, necessitatibus adipisci veniam rerum distinctio nam. Error eaque consequatur numquam similique obcaecati eligendi aspernatur at doloremque quasi eos!</p>
+    <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, debitis. Tenetur est,
+        necessitatibus adipisci veniam rerum distinctio nam. Error eaque consequatur numquam similique obcaecati
+        eligendi aspernatur at doloremque quasi eos!</p>
+    <br><br><br>
+    <div class="three">
+        <div class="one">
+            <div class="first">
+                <h2>Hello World</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde.</p>
+                <h2>Hello World</h2>
+            </div>
+            <div class="second">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde.</p>
+                <h2>Hello World</h2>
+            </div>
+        </div>
+        <div class="tow">
+            <div class="third">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde.</p>
+            <h2>Hello World</h2>
+        </div>
+        <div class="four">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde.</p>
+        </div>
+        <div class="five">
+            <h2>Hello World</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde.</p>
+        </div>
+        </div>
+    </div>
 </body>
+
 </html>
